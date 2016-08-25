@@ -51,7 +51,7 @@ Update
     * 介于angularjs实在难以驾驭，所以改造的时候用的是普通的js脚本，虽然没使用，但是至少要能看懂angular的一些规则
   2. 闲话少说 开始搞起
     * 第一个需求是在detials标签页的每一行的最后增加一个run 的按钮
-      + 连猜带蒙 大概猜出前端的页面在res这个文件夹内 看到的主页是这个文件: ```/res/app/views/index.jade```
+      + 前端的页面在res这个文件夹内 看到的主页是这个文件: ```/res/app/views/index.jade```
       + 当了解了jade的一些语法的时候试图改这个index.jade 然后用上面提到的gulp命令编译 然后stf local运行，发现的确是这个页面
       + 接下来是找detials这个tab页 继续连蒙带猜找到这个文件```/res/app/device-list/details/device-list-details.jade``` 打开后并没有一行行```<tr/>```
       然后意识到这里面得device应该都是动态加载的, 然后找到同目录下的```device-list-details-directive.js```文件
