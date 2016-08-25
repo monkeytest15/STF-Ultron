@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .result_table table {
+            width: 100%;
+            padding: 0;
+            margin: auto;
+        }
+        
+        .result_table th {
+            font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #4f6b72;
+            border-left: 1px solid #C1DAD7;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            border-top: 1px solid #C1DAD7;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 6px 6px 6px 12px;
+            background: #CAE8EA no-repeat;
+        }
+        
+        .result_table td {
+            border-left: 1px solid #C1DAD7;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            background: #fff;
+            font-size: 14px;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+        }
+        table {
+            *border-collapse: collapse; /* IE7 and lower */
+            border-spacing: 0;
+            width: 100%;    
+        }
+
+        .bordered {
+            border: solid #ccc 1px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 1px 1px #ccc; 
+            -moz-box-shadow: 0 1px 1px #ccc; 
+            box-shadow: 0 1px 1px #ccc;         
+        }
+
+        .bordered tr:hover {
+            background: #fbf8e9;
+            -o-transition: all 0.1s ease-in-out;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;     
+        }    
+            
+        .bordered td, .bordered th {
+            border-left: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;    
+        }
+
+        .bordered th {
+            font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            background-color: #dce9f9;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+            background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+            background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+            -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+            -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+            box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+            border-top: none;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+        }
+
+        .bordered td:first-child, .bordered th:first-child {
+            border-left: none;
+        }
+
+        .bordered th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+            -webkit-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+        }
+
+        .bordered th:last-child {
+            -moz-border-radius: 0 6px 0 0;
+            -webkit-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+        }
+
+        .bordered th:only-child{
+            -moz-border-radius: 6px 6px 0 0;
+            -webkit-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .bordered tr:last-child td:first-child {
+            -moz-border-radius: 0 0 0 6px;
+            -webkit-border-radius: 0 0 0 6px;
+            border-radius: 0 0 0 6px;
+        }
+
+        .bordered tr:last-child td:last-child {
+            -moz-border-radius: 0 0 6px 0;
+            -webkit-border-radius: 0 0 6px 0;
+            border-radius: 0 0 6px 0;
+        }
+		
+		#workDemo a { width: 65px; height:20px; margin:1px; padding:0; border:gray 1px solid; float:left; overflow:hidden; text-decoration:none; display:block; position:relative }
+		#workDemo a span { display:none; }
+		#workDemo a img { border:none; }
+		#workDemo a:hover { border-color:#C1DAD7; }
+		#workDemo a:hover span { position:absolute; background:#C1DAD7; color:white; width:100%; padding-top:3px; text-align:center;  right:0; bottom:0; display:block; font-size:11px; filter: Alpha(Opacity=60);Opacity:0.6; }
+    </style>
+    <script src='result.js'></script>
+    <script src='echarts.min.js'></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" href="colorbox.css" />
+	<script src="jquery.colorbox.js"></script>
+    <script src="jquery.sortElements.js"></script>
+</head>
+<body>
+    <!--<div id="light" style="width: 80%;height:400px;TEXT-ALIGN: center;MARGIN-RIGHT: auto; MARGIN-LEFT: auto;"></div>-->
+    <div id="light" style="width: 50%;height:400px; float: left;"></div>
+    <div id="sum_result" style="width: 50%;height:400px; float: right;"></div>
+    <br/><br/>
+    <div id='device－result'></div>
+    <div style='display:none'>
+        <div id='inline_content' style='padding:10px; background:#fff;'>
+        <p><strong>This content comes from a hidden element on this page.</strong></p>
+        <p>The inline option preserves bound JavaScript events and changes, and it puts the content back where it came from when it is closed.</p>
+        <p><a id="click" href="#" style='padding:5px; background:#ccc;'>Click me, it will be preserved!</a></p>
+        
+        <p><strong>If you try to open a new Colorbox while it is already open, it will update itself with the new content.</strong></p>
+        <p>Updating Content Example:<br />
+        <a class="ajax" href="../content/ajax.html">Click here to load new content</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

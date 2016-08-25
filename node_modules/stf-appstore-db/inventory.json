@@ -1,0 +1,29 @@
+{
+  "amazon-appstore": {
+    "name": "Amazon Appstore"
+  },
+  "baidu-appstore": {
+    "name": "Baidu Appstore"
+  },
+  "google-play-store": {
+    "name": "Google Play Store",
+    "android": {
+      "package": "com.google"
+    }
+  },
+  "samsung-galaxy-apps": {
+    "name": "Samsung GALAXY Apps"
+  },
+  "slideme-market": {
+    "name": "SlideME Market"
+  },
+  "tencent-app-gem": {
+    "name": "Tencent App Gem"
+  },
+  "wandoujia": {
+    "name": "Wandoujia"
+  },
+  "xiaomi-appstore": {
+    "name": "Xiaomi App Store"
+  }
+}

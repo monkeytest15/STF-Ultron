@@ -1,0 +1,30 @@
+{
+  "name": "font-lato-2-subset",
+  "version": "0.4.0",
+  "homepage": "https://github.com/gunta/font-lato-2-subset",
+  "authors": [
+    "Gunther Brunner <gunta85@gmail.com>"
+  ],
+  "description": "A subset of the font Lato 2",
+  "main": "css/font-lato-2.css",
+  "keywords": [
+    "font"
+  ],
+  "license": "SIL OPEN FONT LICENSE",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "116ed6b197af95c0e2c0c0760020d960efa7c515"
+  },
+  "_source": "https://github.com/gunta/font-lato-2-subset.git",
+  "_target": "~0.4.0",
+  "_originalSource": "font-lato-2-subset"
+}

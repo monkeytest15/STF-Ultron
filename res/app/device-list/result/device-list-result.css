@@ -1,0 +1,17 @@
+.device-list-result-content table {
+  white-space: nowrap;
+}
+
+.device-list-result-content .device-list-product,
+.device-list-result-content .device-list-carrier {
+  white-space: normal;
+}
+
+.device-list-result-content .progress {
+  margin-bottom: 0 !important;
+  height: 17px !important;
+}
+
+.device-list-result-content .device-status.state-available {
+  font-weight: 600;
+}

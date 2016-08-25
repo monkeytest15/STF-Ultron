@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g bower
+- bower install
+- node_modules/protractor/bin/webdriver-manager update
+script:
+- gulp test
+addons:
+  sauce_connect: true
+env:
+  global:
+  - secure: ja0MoPzIyYXeo5Iqbqyax2hyrnaZLUJi7CQW39+VgbfrisRsITeDRqQG6t2JIJTS8U5CdZWApmnWej5tE5Ec8WUNHYwet67eyROd2BT0fHAyuAP54kZKsmK0wOqSJxOzkz38NHHesY0nSl1dSa4EBrKdi2478C6d/VhhWyRgvcE=
+  - secure: CW/yGsr9rQKmlRC2pBxEJfk3eR5iIB75RHnR/h+wSvcEBj5UAYQcj25r6QpDYjqlKjD1P+cwAHwXQ80ULzNmExvJsi9HSPpTZn9SUlxFdR6i2LH7kop5w7uVwIRtWXQt/DfGgBTgA43zzpZtHvNOzDoVjkhtoeoB1E+L+008nBA=

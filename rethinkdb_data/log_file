@@ -1,0 +1,48 @@
+2016-07-25T22:10:15.219147000 0.021412s notice: Recursively removing directory /Users/monkey/Documents/company_source/mus-ultron/rethinkdb_data/tmp
+2016-07-25T22:10:15.220772000 0.023040s notice: Initializing directory /Users/monkey/Documents/company_source/mus-ultron/rethinkdb_data
+2016-07-25T22:10:15.220858000 0.023122s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/monkey/Documents/company_source/mus-ultron/rethinkdb_data' did not already exist or is empty.)
+2016-07-25T22:10:15.220885000 0.023150s notice: Running rethinkdb 2.3.1 (CLANG 7.3.0 (clang-703.0.29))...
+2016-07-25T22:10:15.243747000 0.046012s notice: Running on Darwin 15.5.0 x86_64
+2016-07-25T22:10:15.243795000 0.046060s notice: Loading data from directory /Users/monkey/Documents/company_source/mus-ultron/rethinkdb_data
+2016-07-25T22:10:15.412207000 0.214471s info: Automatically using cache size of 100 MB
+2016-07-25T22:10:15.412217000 0.214481s warn: Cache size does not leave much memory for server and query overhead (available memory: 874 MB).
+2016-07-25T22:10:15.412222000 0.214486s warn: Cache size is very low and may impact performance.
+2016-07-25T22:10:15.412960000 0.215224s notice: Listening for intracluster connections on port 29015
+2016-07-25T22:10:15.414207000 0.216471s notice: Listening for client driver connections on port 28015
+2016-07-25T22:10:15.414299000 0.216564s notice: Listening for administrative HTTP connections on port 8080
+2016-07-25T22:10:15.414300000 0.216564s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-25T22:10:15.414304000 0.216568s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-25T22:10:15.414305000 0.216569s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-25T22:10:15.414307000 0.216571s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-25T22:10:15.414310000 0.216574s notice: Server ready, "MonkeydeMacBook_Pro_local_sdk" 3b39d1e4-8778-4a5f-87ce-41236dd0684c
+2016-07-25T22:10:15.938102000 0.740367s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-07-25T22:11:18.190168000 62.990562s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Starting a new Raft election for term 1.
+2016-07-25T22:11:18.201888000 63.002282s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Added replica on this server.
+2016-07-25T22:11:18.216300000 63.016694s info: Table 8cc898c0-cd05-45b3-ad3e-f9e672cf68e6: Starting a new Raft election for term 1.
+2016-07-25T22:11:18.216306000 63.016699s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Starting a new Raft election for term 1.
+2016-07-25T22:11:18.217491000 63.017885s info: Table 8cc898c0-cd05-45b3-ad3e-f9e672cf68e6: Added replica on this server.
+2016-07-25T22:11:18.217737000 63.018130s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Added replica on this server.
+2016-07-25T22:11:18.261011000 63.061405s info: Table 88f0c584-b698-4d29-b291-4714bd38b7cc: Starting a new Raft election for term 1.
+2016-07-25T22:11:18.261238000 63.061632s info: Table 88f0c584-b698-4d29-b291-4714bd38b7cc: Added replica on this server.
+2016-07-25T22:11:18.273998000 63.074392s info: Table e178efab-b32e-4711-82ae-92864a4f15f8: Starting a new Raft election for term 1.
+2016-07-25T22:11:18.274424000 63.074818s info: Table e178efab-b32e-4711-82ae-92864a4f15f8: Added replica on this server.
+2016-07-25T22:11:18.299027000 63.099421s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-25T22:11:18.299397000 63.099790s info: Table 8cc898c0-cd05-45b3-ad3e-f9e672cf68e6: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-25T22:11:18.314515000 63.114908s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-25T22:11:18.314601000 63.114995s info: Table 88f0c584-b698-4d29-b291-4714bd38b7cc: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-25T22:11:18.314721000 63.115115s info: Table e178efab-b32e-4711-82ae-92864a4f15f8: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-25T22:11:19.154967000 63.955304s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-25T22:11:19.155155000 63.955493s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-25T22:11:19.155399000 63.955736s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-25T22:11:19.155664000 63.956001s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Configuration is changing.
+2016-07-25T22:11:19.155802000 63.956139s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Configuration is changing.
+2016-07-25T22:11:19.156503000 63.956840s info: Table 8cc898c0-cd05-45b3-ad3e-f9e672cf68e6: Configuration is changing.
+2016-07-25T22:11:19.164077000 63.964415s info: Table e178efab-b32e-4711-82ae-92864a4f15f8: Configuration is changing.
+2016-07-25T22:13:31.406793000 196.203167s info: Table e178efab-b32e-4711-82ae-92864a4f15f8: Configuration is changing.
+2016-07-25T22:13:31.409119000 196.205494s info: Table 8cc898c0-cd05-45b3-ad3e-f9e672cf68e6: Configuration is changing.
+2016-07-25T22:13:31.409158000 196.205533s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Configuration is changing.
+2016-07-25T22:13:31.409176000 196.205550s info: Table 4b995d1b-cb6c-44f3-ac79-914e8b8633bc: Configuration is changing.
+2016-07-25T22:13:31.410120000 196.206494s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-25T22:13:31.410279000 196.206653s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-25T22:13:31.410286000 196.206660s info: Table c6ca4fa1-d9ad-4b11-b250-11e2f10f4e7f: Configuration is changing.
+2016-07-27T16:12:34.960648000 86401.616438s notice: A newer version of the RethinkDB server is available: 2.3.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.

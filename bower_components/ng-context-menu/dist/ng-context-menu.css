@@ -1,0 +1,14 @@
+.pointer {
+    cursor: pointer;
+}
+.highlight {
+    color: #fff;
+    background-color: #3498db;
+}
+.expanded {
+    height: 400px;
+}
+.position-fixed {
+    position: fixed;
+    z-index: 2000;
+}
