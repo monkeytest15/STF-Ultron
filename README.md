@@ -1,3 +1,5 @@
+This Doc writed by 其亦优
+
 Update
 ---
   1. 目前支持一台或多台机器的自动化用例触发
